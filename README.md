@@ -44,7 +44,7 @@ If you're using PSR-16 cache adapter directly:
 - Always use `->toSeconds()` when using `Ttl` object.
 
 ```php
-use Yiisoft\Cache\Ttl;
+use Elephant\Ttl;
 
 $cache = new Cache();
 
@@ -89,9 +89,10 @@ $cache->set('key', 'value', Ttl::from(null)->toSeconds());
 - You can pass a `Ttl` object in the constructor as the default value.
 - You can pass it to methods like `getOrSet()` which expect integer number of seconds or `null`.
 ```php
-use Yiisoft\Cache\Cache;
+use Your\Cache\Cache;
 use Your\Cache\ArrayCache;
-use Yiisoft\Cache\Ttl;
+
+use Elephant\Ttl\Ttl;
 
 $cache = new Cache(new ArrayCache(), Ttl::minutes(5)); // default TTL
 $cache->getOrSet('key', 'value'); // // Uses default TTL
