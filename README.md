@@ -44,7 +44,7 @@ If you're using PSR-16 cache adapter directly:
 - Always use `->toSeconds()` when using `Ttl` object.
 
 ```php
-use Elephant\Ttl;
+use Elephant\Ttl\Ttl;
 
 $cache = new Cache();
 
