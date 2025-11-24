@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://github.com/elephant-php/vo-ttl" target="_blank">
-        <img src="elephant-php.webp" height="150px" alt="Yii">
+        <img src="elephant-php.webp" height="150px" alt="elephant-php">
     </a>
     <h1 align="center">TTL - Time To Live</h1>
     <br>
@@ -84,7 +84,7 @@ $cache->set('key', 'value', Ttl::forever()->toSeconds());
 $cache->set('key', 'value', Ttl::from(null)->toSeconds());
 ```
 
-### When using `Ttl` with Yii cache wrapper:
+### When using `Ttl` with You cache wrapper:
 
 - You can pass a `Ttl` object in the constructor as the default value.
 - You can pass it to methods like `getOrSet()` which expect integer number of seconds or `null`.
